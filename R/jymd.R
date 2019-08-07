@@ -1,4 +1,4 @@
-#' Parse dates with **y**ear, **m**onth, **d**day, and Japanese nengo components
+#' Parse dates with **y**ear, **mo**nth, **d**ay, and Japanese nengo components
 #'
 #' An wrapper of [lubridate::ymd()] to enable paring Japanese gengo. Meiji, Taisyo, Syowa, Heisei, and Reiwa can be recognized.
 #'

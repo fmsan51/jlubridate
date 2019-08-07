@@ -5,7 +5,7 @@
 \alias{jymd_h}
 \alias{jymd_hm}
 \alias{jymd_hms}
-\title{Parse dates with \strong{y}ear, \strong{m}onth, \strong{d}day, and Japanese nengo components}
+\title{Parse dates with \strong{y}ear, \strong{mo}nth, \strong{d}ay, and Japanese nengo components}
 \usage{
 jymd(..., quiet = FALSE, tz = "Asia/Tokyo",
   locale = Sys.getlocale("LC_TIME"), truncated = 0)
