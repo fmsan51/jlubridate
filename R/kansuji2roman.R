@@ -2,12 +2,11 @@
 #'
 #' Converts kansuji or zenkaku numbers to Roman numbers. Applicable only for kansuji that means an integer from 0 to 9999. Letters that don't mean numbers (including commas as decimal separators) are ignored.
 #'
-#' @param ... kansuji to convert
+#' @param x kansuji to convert
 #' @examples
 #' kansuji2roman(c("一二三四年五月六日", "千二百三十四", "１２３４"))
 #' @export
-kansuji2roman <- function(...) {
-  x <- rapply(list(...), as.character)
+kansuji2roman <- function(x) {
   x <- chartr(kan2roman, "12345678901234567890111222333456777890", x)
   pat1000 <- paste0("[", kan1000, "]")
   pat100 <- paste0("[", kan100, "]")

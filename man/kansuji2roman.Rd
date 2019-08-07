@@ -4,10 +4,10 @@
 \alias{kansuji2roman}
 \title{Convert kansuji to Roman numbers}
 \usage{
-kansuji2roman(...)
+kansuji2roman(x)
 }
 \arguments{
-\item{...}{kansuji to convert}
+\item{x}{kansuji to convert}
 }
 \description{
 Converts kansuji or zenkaku numbers to Roman numbers. Applicable only for kansuji that means an integer from 0 to 9999. Letters that don't mean numbers (including commas as decimal separators) are ignored.
