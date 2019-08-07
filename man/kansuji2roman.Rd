@@ -12,6 +12,3 @@ kansuji2roman(x)
 \description{
 Converts kansuji or zenkaku numbers to Roman numbers. Applicable only for kansuji that means an integer from 0 to 9999. Letters that don't mean numbers (including commas as decimal separators) are ignored.
 }
-\examples{
-kansuji2roman(c("一二三四年五月六日", "千二百三十四", "１２３４"))
-}

@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("gengo2seireki", {
   expect_equal(gengo2seireki(c("明治元年9月8日", "M45.7.30")),
                              c("1868年9月8日", "1912.7.30"))

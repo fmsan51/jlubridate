@@ -1,3 +1,5 @@
+skip_on_cran()
+
 test_that("jymd", {
   expect_equal(jymd(c("明治元年9月8日", "大1.7.30")),
                ymd(c("1868年9月8日", "1912.7.30"), tz = "Asia/Tokyo"))

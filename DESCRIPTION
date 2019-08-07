@@ -8,12 +8,15 @@ Authors@R:
            email = "fmsan51@gmail.com",
            comment = c(ORCID = "0000-0002-9297-4843"))
 Description: A wrapper of ymd() and ymd_hms() from a package lubridate to enable parsing Japanese "gengo" (or nengo; era names).
+Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Imports: 
-    lubridate
+    lubridate,
+    dplyr,
+    stringr
 Suggests: 
     testthat (>= 2.1.0)
