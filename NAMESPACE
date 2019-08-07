@@ -2,6 +2,9 @@
 
 export(gengo2seireki)
 export(jymd)
+export(jymd_h)
+export(jymd_hm)
+export(jymd_hms)
 export(kansuji2roman)
 importFrom(dplyr,case_when)
 importFrom(dplyr,coalesce)
