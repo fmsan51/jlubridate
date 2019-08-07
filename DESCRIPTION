@@ -11,3 +11,9 @@ Description: A wrapper of ymd() and ymd_hms() from a package lubridate to enable
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports: 
+    lubridate
+Suggests: 
+    testthat (>= 2.1.0)
