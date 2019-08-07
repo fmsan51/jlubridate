@@ -1,13 +1,13 @@
 Package: jlubridate
-Title: What the Package Does (One Line, Title Case)
+Title: Wrapper of lubridate to Parse Japanese Nengo
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Yuri",
+           family = "Fujimoto",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "fmsan51@gmail.com",
+           comment = c(ORCID = "0000-0002-9297-4843"))
+Description: A wrapper of ymd() and ymd_hms() from a package lubridate to enable parsing Japanese "nengo" (era names).
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
