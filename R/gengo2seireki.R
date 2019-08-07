@@ -35,6 +35,7 @@ gengo2seireki <- function(x) {
   }
   matched_mat[, duplication] <- NA
   col_matched <- rowSums(sweep(!is.na(matched_mat), 2, seq_along(gengo), "*"))
+  col_matched[col_matched == 0] <- NA
 
   matched_gengo <- gengo[col_matched]
   str_wo_gengo <- coalesce(!!!as.data.frame(cbind(matched_mat, x)))
