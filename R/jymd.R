@@ -1,10 +1,11 @@
-#' Parse dates with **y**ear, **mo**nth, **d**ay, and Japanese nengo components
+#' Parse dates with year in Japanese nengo, month, and day components
 #'
 #' An wrapper of [lubridate::ymd()] to enable paring Japanese gengo. Meiji, Taisyo, Syowa, Heisei, and Reiwa can be recognized.
 #'
 #' @note `tz` argument has default value as `"Asia/Tokyo"` unlike `NULL` in [lubridate::ymd()].
 #'
 #' @param tz Time zone indicator. If `NULL` a Date object is returned. Otherwise a POSIXct with time zone attribute set to tz.
+#'
 #' @inheritParams lubridate::ymd
 #' @importFrom lubridate ymd ymd_h ymd_hm ymd_hms
 #' @name jymd

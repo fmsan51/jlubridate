@@ -1,13 +1,13 @@
 Package: jlubridate
-Title: Wrapper of lubridate to Parse Japanese Gengo
-Version: 0.0.0.9000
+Title: Enhance 'lubridate' to Parse Japanese 'Gengo'
+Version: 0.1.0
 Authors@R: 
     person(given = "Yuri",
            family = "Fujimoto",
            role = c("aut", "cre"),
            email = "fmsan51@gmail.com",
            comment = c(ORCID = "0000-0002-9297-4843"))
-Description: A wrapper of ymd() and ymd_hms() from a package lubridate to enable parsing Japanese "gengo" (or nengo; era names).
+Description: Provide wrappers of ymd() series from a package 'lubridate' to enable parsing Japanese 'gengo' (or 'nengo'; era names).
 Depends: R (>= 2.10)
 License: MIT + file LICENSE
 Encoding: UTF-8
