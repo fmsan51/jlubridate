@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-jlublidate provides a wrapper of `ymd()` from [lubridate package](https://cran.r-project.org/package=lubridate) to parse Japanese gengo (元号) (or nengo (年号)).
+jlublidate provides wrappers of `ymd()` series from [lubridate package](https://cran.r-project.org/package=lubridate) to parse Japanese gengo (元号) (or nengo (年号)).
 
 ## Installation
 
@@ -44,25 +44,25 @@ devtools::install_github("fmsan51/jlubridate")
 
 ## Example
 
-`jymd`: recognize date written in 元号 and convert it to `POSIXct` class object in 西暦.
+`jymd()`: recognize date written in 元号 and convert it to `POSIXct` class object in 西暦.
 ```{r example}
 library(jlubridate)
 
-jymd("昭和元年12月25日", "平10.3.28", "R 4-3-1", "2018年8月7日")  # 元号 dates can be mixed with 西暦 dates
+jymd("昭和元年十二月二十五日", "平１０．３．２８", "R 4-3-1", "二〇一九年八月七日")  # 元号 dates can be mixed with 西暦 dates.
 ```
 
 元号 of 明治, 大正, 昭和, 平成, and 令和 can be recognized.  
 Formats which can be recognized are follows: 令和, 令, R, r, Reiwa, reiwa, REIWA.  
-`jymd`, `jymd_h`, `jymd_hm`, and `jymd_hms` correspond to `ymd`, `ymd_h`, `ymd_hm` and `ymd_hms` respectively.  
+`jymd()`, `jymd_h()`, `jymd_hm()`, and `jymd_hms()` correspond to `ymd()`, `ymd_h()`, `ymd_hm()` and `ymd_hms()` respectively.  
 
 ### Extras
 
-`gengo2seireki`: convert 元号 dates to 西暦 dates.
+`gengo2seireki()`: convert 元号 dates to 西暦 dates.
 ```{r gengo2seireki}
 gengo2seireki("明治一二年三月四日")
 ```
 
-`kansuji2roman`: convert numbers written in Chinese characters (漢数字) to Roman numbers. Applicable only for integers from 0 to 9999.
+`kansuji2roman()`: convert numbers written in Chinese characters (漢数字) to Roman numbers. Applicable only for integers from 0 to 9999.
 ```{r}
 kansuji2roman("千二百三十四")
 ```
